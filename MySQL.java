@@ -8,10 +8,9 @@ public class MySQL extends TwitterApp {
 
         if(kontrolEt(id)) {
 
-            String dbURL = "jdbc:mysql://localhost:3306/tw_test";
-            String kullaniciAdi = "root";
-            String sifre = "Ordulu52!*.";
-
+            String dbURL = "jdbc:mysql://localhost:3306/table_name";
+            String kullaniciAdi = "username";
+            String sifre = "password";
             Connection dbCon = null;
             PreparedStatement stmt = null;
             int rs;
@@ -59,9 +58,9 @@ public class MySQL extends TwitterApp {
 
     private boolean kontrolEt(String id) throws SQLException {
 
-        String dbURL = "jdbc:mysql://localhost:3306/tw_test";
-        String kullaniciAdi = "root";
-        String sifre = "Ordulu52!*.";
+        String dbURL = "jdbc:mysql://localhost:3306/table_name";
+        String kullaniciAdi = "username";
+        String sifre = "password";
 
         Connection dbCon = null;
         Statement stmt = null;
